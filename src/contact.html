@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <title>Contact Me</title>
+        <style>
+            body {
+                background-color: rgb(57, 52, 52);
+                color: white;
+            }
+            
+            .toolbar {
+             padding: 20;
+             float: right;
+            }
+
+            .toolbar button {
+                background: none;
+                border: none;
+                color: white;
+                cursor: pointer;
+                font-size: 16px;
+                margin-right: 10px;
+                padding: 0;
+            }
+
+            .main-body {
+                padding: 30px;
+                clear: both;
+                margin-left: 200px;
+                font-family: "PT Sans", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .email-form {
+                margin-top: 20px;
+            }
+
+            .email-form input, .email-form textarea {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 10px;
+                font-size: 16px;
+            }
+
+            .email-form button {
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="toolbar">
+            <button>Home</button>
+            <button>About Me</button>
+            <button>Projects</button>
+            <button>Academia</button>
+            <button>Personal Achievements</button>
+            <button>Contact Me</button>
+            <button>Download CV</button>
+        </div>
+        <div class="main-body">
+        <h1>Contact Me</h1>
+        <p>In this page you can find multiple ways to get in contact or connect with me via email or social media.</p>
+        <p>+447719138985</p>
+        <p>lmillar23@qub.ac.uk</p>
+        <p>LinkedIN</p>
+        <p>GitHub</p>
+        <div class="email-form">
+            <form action="send_mail.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="email" placeholder="Your Email" required>
+                <input type="text" name="message" placeholder="Message" rows="5" required>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
+
+ 
