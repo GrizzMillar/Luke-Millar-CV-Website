@@ -1,33 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<title>home</title>
-<style>
-    body {
-    background-color: rgb(57, 52, 52);
-    color: white;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: rgb(57, 52, 52);
+            color: white;
+            font-family: "PT Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-    .toolbar {
-        background-color: rgb(0, 0, 0);
-        padding: 10px 20px;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-    }
+        .toolbar {
+            background-color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
 
         .toolbar button {
             background: none;
@@ -57,6 +60,10 @@
             transition: background-color 0.3s ease;
         }
 
+        .toolbar .download-cv:hover {
+            background-color: #e68900;
+        }
+
         .main-body {
             text-align: center;
             padding-top: 80px;
@@ -66,7 +73,6 @@
             max-width: 800px;
             margin: 0 auto;
             flex-grow: 1;
-            
         }
 
         .main-body h1 {
@@ -76,6 +82,7 @@
 
         .main-body h3 {
             margin: 10px 0;
+            color: #ff9800;
         }
 
         .content {
@@ -106,8 +113,9 @@
             line-height: 1.6;
             margin: 10px 0;
         }
+
         .footer {
-            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.8);
             color: white;
             text-align: center;
             padding: 20px;
@@ -116,40 +124,40 @@
         }
 
         .footer a {
+            color: #ff9800;
             text-decoration: none;
             margin: 0 10px;
         }
 
-        footer a:hover {
+        .footer a:hover {
             text-decoration: underline;
         }
-
     </style>
 </head>
 <body>
     <div class="toolbar">
-        <button>Home</button>
-        <button onclick="window.location.href=`about.html`">About Me</button>
-        <button onclick="window.location.href=`about.html`">Projects</button>
-        <button onclick="window.location.href=`about.html`">Academia</button>
-        <button onclick="window.location.href=`about.html`">Personal Achievements</button>
-        <button onclick="window.location.href=`about.html`">Contact Me</button>
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='about.html'">About Me</button>
+        <button onclick="window.location.href='projects.html'">Projects</button>
+        <button onclick="window.location.href='academia.html'">Academia</button>
+        <button onclick="window.location.href='achievements.html'">Personal Achievements</button>
+        <button onclick="window.location.href='contact.html'">Contact Me</button>
         <a href="cv.pdf" class="download-cv">
-            Download CV <i class="fas fa-download"></i> 
+            <i class="fas fa-download"></i> Download CV
         </a>
     </div>
     <div class="main-body">
-    <h1>Luke Millar</h1>
-    <h3>Commited, Focused, Unstoppable</h3>
-    <div class="content">
-    <img src="images/home_image.jpg" alt="luke">
-    <div class="text">
-    <p>Welcome and thank you for taking the time to visit my personal resume website.</p>
-    <p>Here you will find all of the relevant information about myself that you may find interesting.</p>
-    <p>Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects.</p>
-    <p>P.S If your a fellow golfer you will find my app 'Dialed In' very interesting!</p>
-    </div>
-    </div>
+        <h1>Luke Millar</h1>
+        <h3>Committed, Focused, Unstoppable</h3>
+        <div class="content">
+            <img src="images/home_image.jpg" alt="Luke">
+            <div class="text">
+                <p>Welcome and thank you for taking the time to visit my personal resume website.</p>
+                <p>Here you will find all of the relevant information about myself that you may find interesting.</p>
+                <p>Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects.</p>
+                <p>P.S. If you're a fellow golfer, you will find my app 'Dialed In' very interesting!</p>
+            </div>
+        </div>
     </div>
     <div class="footer">
         <p>Phone: <a href="tel:+447719138985">+447719138985</a> | Email: <a href="mailto:lmillar23@qub.ac.uk">lmillar23@qub.ac.uk</a> | LinkedIn: <a href="https://www.linkedin.com/in/lukemillar" target="_blank">linkedin.com/in/lukemillar</a></p>
