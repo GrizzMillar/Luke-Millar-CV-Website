@@ -1,57 +1,187 @@
 <html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <title>academia</title>
-        <style>
-            body {
-                background-color: rgb(57, 52, 52);
-                color: white;
-            }
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<title>home</title>
+<style>
+    body {
+    background-color: rgb(57, 52, 52);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
+    .toolbar {
+        background-color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+        .toolbar button {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 15px;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .toolbar button:hover {
+            color: #ff9800;
+        }
+
+        .toolbar .download-cv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-left: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .main-body {
+            text-align: center;
+            padding-top: 80px;
+            font-family: "PT Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            max-width: 800px;
+            margin: 0 auto;
+            flex-grow: 1;
             
-            .toolbar {
-             padding: 20;
-             float: right;
-            }
+        }
 
-            .toolbar button {
-                background: none;
-                border: none;
-                color: white;
-                cursor: pointer;
-                font-size: 16px;
-                margin-right: 10px;
-                padding: 0;
-            }
+        .main-body h1 {
+            font-size: 60px;
+            margin: 20px 0;
+        }
 
-            .main-body {
-                padding: 30px;
-                clear: both;
-                margin-left: 200px;
-                font-family: "PT Sans", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-            }
-            .main-body th {
-                border: 1px solid rgb(193, 187, 187);
-            }
+        .main-body h3 {
+            margin: 10px 0;
+        }
 
-        </style>
-    </head>
-    <body>
-        <div class="toolbar">
-            <button>Home</button>
-            <button>About Me</button>
-            <button>Projects</button>
-            <button>Academia</button>
-            <button>Personal Achievements</button>
-            <button>Contact Me</button>
-            <button>Download CV</button>
-        </div>
-        <div class="main-body">
-        <h1>Academia</h1>
-        <h2>Coleraine Grammar School</h2>
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .content img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content .text {
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .content .text p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .table-container {
+            margin: 20px 0;
+            overflow: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #444;
+        }
+
+        tr:nth-child(even) {
+            background-color: #444;
+        }
+
+        .footer {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: auto;
+        }
+
+        .footer a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .main-body th {
+            border: 1px solid rgb(193, 187, 187);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <button>Home</button>
+        <button onclick="window.location.href=`about.html`">About Me</button>
+        <button onclick="window.location.href=`about.html`">Projects</button>
+        <button onclick="window.location.href=`about.html`">Academia</button>
+        <button onclick="window.location.href=`about.html`">Personal Achievements</button>
+        <button onclick="window.location.href=`about.html`">Contact Me</button>
+        <a href="cv.pdf" class="download-cv">
+            Download CV <i class="fas fa-download"></i> 
+        </a>
+    </div>
+    <div class="main-body">
+    <h1>Academia</h1>
+    <div class="content">
+    <div class="text">
+    <p>Welcome and thank you for taking the time to visit my personal resume website.</p>
+    <p>Here you will find all of the relevant information about myself that you may find interesting.</p>
+    <p>Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects.</p>
+    <p>P.S If your a fellow golfer you will find my app 'Dialed In' very interesting!</p>
+    </div>
+    </div>
+    <div class="table-container">
+    <h2>Coleraine Grammar School</h2>
         <h3>A-Levels (2020)</h3>
         <table>
         <tr>
@@ -71,6 +201,8 @@
             <th>B</th>
         </tr>
         </table>
+    </div>
+    <div class="table-container">
         <h2>Queen's University Belfast</h2>
         <h3>Year One (2021)</h3>
         <table>
@@ -103,6 +235,8 @@
             <th>64</th>
         </tr>
         </table>
+    </div>
+    <div class="table-container">
         <h3>Year Two (2022)</h3>
         <table>
         <tr>
@@ -130,9 +264,11 @@
             <th>78</th>
         </tr>
         </table>
-        <h3>Year Four (2023)</h3>
+    </div>
+        <h3>Year Three (2023)</h3>
         <p>Internship year at Advanced Micro Devices</p>
-        <h3>Year Three (2024)</h3>
+        <div class="table-container">
+        <h3>Year Four (2024)</h3>
         <table>
         <tr>
             <th>Subject</th>
@@ -160,7 +296,12 @@
         </tr>
         </table>
         </div>
-    </body>
+    </div>
+    <div class="footer">
+        <p>Phone: <a href="tel:+447719138985">+447719138985</a> | Email: <a href="mailto:lmillar23@qub.ac.uk">lmillar23@qub.ac.uk</a> | LinkedIn: <a href="https://www.linkedin.com/in/lukemillar" target="_blank">linkedin.com/in/lukemillar</a></p>
+        <p>&copy; 2024 Luke Millar</p>
+    </div>
+</body>
 </html>
 
  
