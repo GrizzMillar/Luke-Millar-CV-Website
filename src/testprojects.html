@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Home</title>
+    <title>Contact Me</title>
     <style>
         body {
             background-image: url('images/code.jpg');
@@ -17,13 +17,13 @@
             color: white;
             margin: 0;
             padding: 0;
-            font-family: 'PT Sans', sans-serif;
             overflow-x: hidden;
+            font-family: 'PT Sans', sans-serif;
         }
 
         .toolbar {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 20px 30px;
+            background-color: rgb(0, 0, 0);
+            padding: 30px;
             position: fixed;
             top: 0;
             width: 100%;
@@ -61,12 +61,8 @@
             transition: background-color 0.3s ease;
         }
 
-        .toolbar .download-cv:hover {
-            background-color: #e68a00;
-        }
-
         .main-body {
-            padding-top: 100px; /* Adjust if needed to avoid overlapping with the toolbar */
+            padding-top: 100px;
             font-family: "PT Sans", sans-serif;
             font-weight: 400;
             font-style: normal;
@@ -75,7 +71,7 @@
         }
 
         .banner {
-            height: 100vh;
+            height: 50vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -88,51 +84,86 @@
             margin: 0;
         }
 
-        .banner h3 {
-            font-size: 1.5rem;
-            margin: 0;
-        }
-
-        .section {
-            padding: 20px;
-            width: 100%;
-        }
-
-        .welcome,
-        .about-me,
-        .professional-skills {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 40px 20px;
+        .contact {
+            background-color: rgb(0, 0, 0);
             width: 100%;
             margin: 0;
+            padding: 40px 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .welcome img {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact .contact-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .contact .contact-text {
+            max-width: 50%;
+            text-align: left;
             margin-right: 20px;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .socials {
+            max-width: 50%;
+            text-align: left;
         }
 
         .footer {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgb(0, 0, 0);
             color: white;
             text-align: center;
             padding: 20px;
             box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-            margin-top: auto;
             width: 100%;
         }
 
         .footer a {
             text-decoration: none;
+            margin: 0 10px;
             color: #ff9800;
         }
 
         .footer a:hover {
             text-decoration: underline;
+        }
+
+        .email-form {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 20px;
+        }
+
+        .email-form input,
+        .email-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .email-form button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .email-form button:hover {
+            background-color: #e68a00;
         }
     </style>
 </head>
@@ -151,29 +182,29 @@
     </div>
     <div class="main-body">
         <div class="banner">
-            <h1>Luke Millar</h1>
-            <h3>Welcome to my personal resume website, thanks for stopping by!</h3>
+            <h1>Contact Me</h1>
         </div>
-        <div class="welcome section">
-            <img src="images/home_image.jpg" alt="luke">
-            <p>Welcome and thank you for taking the time to visit my personal resume website.</p>
-            <p>Here you will find all of the relevant information about myself that you may find interesting.</p>
-            <p>Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects.</p>
-            <p>P.S If your a fellow golfer you will find my app 'Dialed In' very interesting!</p>
-        </div>
-        <div class="about-me section">
-            <h2>About Me</h2>
-            <p>Welcome and thank you for taking the time to visit my personal resume website.</p>
-            <p>Here you will find all of the relevant information about myself that you may find interesting.</p>
-            <p>Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects.</p>
-            <p>P.S If your a fellow golfer you will find my app 'Dialed In' very interesting!</p>
-        </div>
-        <div class="professional-skills section">
-            <h2>Professional Skills</h2>
-            <p>Welcome and thank you for taking the time to visit my personal resume website.</p>
-            <p>Here you will find all of the relevant information about myself that you may find interesting.</p>
-            <p>Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects.</p>
-            <p>P.S If your a fellow golfer you will find my app 'Dialed In' very interesting!</p>
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>In this page you can find multiple ways to get in contact or connect with me via email or social media.</p>
+                    <div class="email-form">
+                        <form action="send_mail.php" method="post">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="socials">
+                    <p>Phone: +447719138985</p>
+                    <p>Email: lmillar23@qub.ac.uk</p>
+                    <p><a href="https://www.linkedin.com/in/lukemillar" target="_blank">LinkedIn</a></p>
+                    <p><a href="https://github.com/GrizzMillar" target="_blank">GitHub</a></p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">

@@ -5,21 +5,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<title>home</title>
+<title>academia</title>
 <style>
     body {
-    background-color: rgb(57, 52, 52);
+    background-image: url('images/queens.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    overflow-x: hidden;
     }
 
     .toolbar {
         background-color: rgb(0, 0, 0);
-        padding: 10px 20px;
+        padding: 30px;
         position: fixed;
         top: 0;
         width: 100%;
@@ -58,53 +59,65 @@
         }
 
         .main-body {
-            text-align: center;
-            padding-top: 80px;
+            padding-top: 100px;
             font-family: "PT Sans", sans-serif;
             font-weight: 400;
             font-style: normal;
-            max-width: 800px;
+            max-width: 100%;
             margin: 0 auto;
-            flex-grow: 1;
-            
         }
 
-        .main-body h1 {
-            font-size: 60px;
-            margin: 20px 0;
-        }
-
-        .main-body h3 {
-            margin: 10px 0;
-        }
-
-        .content {
+        .banner {
+            height: 100vh;
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
-            align-items: flex-start;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            margin: 20px 0;
+            text-align: center;
         }
 
-        .content img {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            margin-right: 20px;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .banner h1 {
+            font-size: 3rem;
+            margin: 0;
         }
 
-        .content .text {
-            max-width: 500px;
-            text-align: left;
+        .banner h2 {
+            font-size: 1.5rem;
+            margin: 0;
         }
 
-        .content .text p {
-            line-height: 1.6;
-            margin: 10px 0;
+        .coleraine {
+            padding: 40px 70px;
+            /*background-color: rgba(0, 0, 0, 0.8);*/
+            background-color: rgb(0, 0, 0);
+            margin-bottom: 0px;
+            width: 100%;
+        }
+
+        .coleraine h2 {
+            margin-bottom: 20px;
+        }
+
+        .coleraine p {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+        }
+
+        .queens {
+            padding: 40px 70px;
+            /*background-color: rgba(0, 0, 0, 0.8);*/
+            background-color: rgb(0, 0, 0);
+            margin-bottom: 0px;
+            width: 100%;
+        }
+
+        .queens h2 {
+            margin-bottom: 20px;
+        }
+
+        .queens p {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
         }
 
         .table-container {
@@ -113,7 +126,7 @@
         }
 
         table {
-            width: 100%;
+            width: 70%;
             border-collapse: collapse;
             margin: 20px 0;
             background-color: #333;
@@ -141,6 +154,7 @@
             padding: 20px;
             box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
             margin-top: auto;
+            width: 100%;
         }
 
         .footer a {
@@ -150,10 +164,6 @@
 
         footer a:hover {
             text-decoration: underline;
-        }
-
-        .main-body th {
-            border: 1px solid rgb(193, 187, 187);
         }
 
     </style>
@@ -171,130 +181,135 @@
         </a>
     </div>
     <div class="main-body">
-    <h1>Academia</h1>
-    <div class="content">
-    <div class="text">
-    <p>Welcome and thank you for taking the time to visit my personal resume website.</p>
-    <p>Here you will find all of the relevant information about myself that you may find interesting.</p>
-    <p>Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects.</p>
-    <p>P.S If your a fellow golfer you will find my app 'Dialed In' very interesting!</p>
-    </div>
-    </div>
-    <div class="table-container">
-    <h2>Coleraine Grammar School</h2>
-        <h3>A-Levels (2020)</h3>
-        <table>
-        <tr>
-            <th>Subject</th>
-            <th>Grade</th>
-        </tr>
-        <tr>
-            <th>History</th>
-            <th>B</th>
-        </tr>
-        <tr>
-            <th>Digital Technology</th>
-            <th>B</th>
-        </tr>
-        <tr>
-            <th>Religous Studies</th>
-            <th>B</th>
-        </tr>
-        </table>
-    </div>
-    <div class="table-container">
-        <h2>Queen's University Belfast</h2>
-        <h3>Year One (2021)</h3>
-        <table>
-        <tr>
-            <th>Subject</th>
-            <th>Grade</th>
-        </tr>
-        <tr>
-            <th>Architecture and Networks</th>
-            <th>70</th>
-        </tr>
-        <tr>
-            <th>Databases</th>
-            <th>80</th>
-        </tr>
-        <tr>
-            <th>Procedural Programming</th>
-            <th>61</th>
-        </tr>
-        <tr>
-            <th>Fundamentals of Maths for Computer Science</th>
-            <th>75</th>
-        </tr>
-        <tr>
-            <th>Object Oriented Programming</th>
-            <th>66</th>
-        </tr>
-        <tr>
-            <th>Web Technologies</th>
-            <th>64</th>
-        </tr>
-        </table>
-    </div>
-    <div class="table-container">
-        <h3>Year Two (2022)</h3>
-        <table>
-        <tr>
-            <th>Subject</th>
-            <th>Grade</th>
-        </tr>
-        <tr>
-            <th>Cyber Sercurity Fundamentals</th>
-            <th>73</th>
-        </tr>
-        <tr>
-            <th>Software Engineering and Systems</th>
-            <th>74</th>
-        </tr>
-        <tr>
-            <th>Data Structure and Algorithms</th>
-            <th>69</th>
-        </tr>
-        <tr>
-            <th>Theory of Computation</th>
-            <th>77</th>
-        </tr>
-        <tr>
-            <th>Professional and Transferable Skills</th>
-            <th>78</th>
-        </tr>
-        </table>
-    </div>
-        <h3>Year Three (2023)</h3>
-        <p>Internship year at Advanced Micro Devices</p>
-        <div class="table-container">
-        <h3>Year Four (2024)</h3>
-        <table>
-        <tr>
-            <th>Subject</th>
-            <th>Grade</th>
-        </tr>
-        <tr>
-            <th>Computer Science Project</th>
-            <th>69</th>
-        </tr>
-        <tr>
-            <th>Concurrent Programming</th>
-            <th>73</th>
-        </tr>
-        <tr>
-            <th>Software Testing</th>
-            <th>75</th>
-        </tr>
-        <tr>
-            <th>Network Security</th>
-            <th>72</th>
-        </tr>
-        <tr>
-            <th>Cloud Computing</th>
-            <th>62</th>
-        </tr>
-        </table>
+        <div class="banner">
+            <h1>Academia</h1>
+        </div>
+        <div class="coleraine">
+            <h2>Coleraine Grammar School</h2>
+            <div class="coleraine-content">
+                <p>Welcome and thank you for taking the time to visit my personal resume website. Here you will find all of the relevant information about myself that you may find interesting. Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects. P.S If you're a fellow golfer you will find my app 'Dialed In' very interesting!</p>
+                <div class="table-container">
+                    <h3>A-Levels (2020)</h3>
+                    <table>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr>
+                            <td>History</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>Digital Technology</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>Religious Studies</td>
+                            <td>B</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="queens">
+            <h2>Queen's University Belfast</h2>
+            <div class="queens-content">
+                <p>Welcome and thank you for taking the time to visit my personal resume website. Here you will find all of the relevant information about myself that you may find interesting. Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects. P.S If you're a fellow golfer you will find my app 'Dialed In' very interesting!</p>
+                <div class="table-container">
+                    <h3>Year One (2021)</h3>
+                    <table>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr>
+                            <td>Architecture and Networks</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>Databases</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Procedural Programming</td>
+                            <td>61</td>
+                        </tr>
+                        <tr>
+                            <td>Fundamentals of Maths for Computer Science</td>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            <td>Object Oriented Programming</td>
+                            <td>66</td>
+                        </tr>
+                        <tr>
+                            <td>Web Technologies</td>
+                            <td>64</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table-container">
+                    <h3>Year Two (2022)</h3>
+                    <table>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr>
+                            <td>Cyber Security Fundamentals</td>
+                            <td>73</td>
+                        </tr>
+                        <tr>
+                            <td>Software Engineering and Systems</td>
+                            <td>74</td>
+                        </tr>
+                        <tr>
+                            <td>Data Structure and Algorithms</td>
+                            <td>69</td>
+                        </tr>
+                        <tr>
+                            <td>Theory of Computation</td>
+                            <td>77</td>
+                        </tr>
+                        <tr>
+                            <td>Professional and Transferable Skills</td>
+                            <td>78</td>
+                        </tr>
+                    </table>
+                </div>
+                <h3>Year Three (2023)</h3>
+                <p>Internship year at Advanced Micro Devices</p>
+                <div class="table-container">
+                    <h3>Year Four (2024)</h3>
+                    <table>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr>
+                            <td>Computer Science Project</td>
+                            <td>69</td>
+                        </tr>
+                        <tr>
+                            <td>Concurrent Programming</td>
+                            <td>73</td>
+                        </tr>
+                        <tr>
+                            <td>Software Testing</td>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            <td>Network Security</td>
+                            <td>72</td>
+                        </tr>
+                        <tr>
+                            <td>Cloud Computing</td>
+                            <td>62</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
         </div>
     </div>
     <div class="footer">
@@ -303,5 +318,3 @@
     </div>
 </body>
 </html>
-
- 
