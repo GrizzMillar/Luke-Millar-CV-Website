@@ -1,10 +1,10 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <title>home</title>
 <style>
     body {
@@ -19,7 +19,8 @@
     }
 
     .toolbar {
-        background-color: rgb(0, 0, 0);
+        /*background-color: rgb(0, 0, 0);*/
+        background-color: rgb(26, 25, 25);
         padding: 30px;
         position: fixed;
         top: 0;
@@ -28,6 +29,9 @@
         justify-content: center;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         z-index: 1000;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
     }
 
         .toolbar button {
@@ -60,7 +64,7 @@
 
         .main-body {
             padding-top: 100px;
-            font-family: "PT Sans", sans-serif;
+            font-family: "Poppins", sans-serif;
             font-weight: 400;
             font-style: normal;
             max-width: 100%;
@@ -68,26 +72,27 @@
         }
 
         .banner {
-            height: 100vh;
+            height: 80vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            background-color:rgba(0, 0, 0, 0.3);
+            /*align-items: center;
             justify-content: center;
-            text-align: center;
+            text-align: center;*/
         }
 
         .banner h1 {
-            font-size: 3rem;
-            margin: 0;
+            font-size: 5rem;
+            margin: 100px 0 0 100px;
         }
 
-        .banner h2 {
-            font-size: 1.5rem;
-            margin: 0;
+        .banner p {
+            font-size: 2rem;
+            margin: 0 0 0 100px;
         }
 
         .welcome {
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(26, 25, 25);
             width: 100%;
             height: 100%;
             margin: 0;
@@ -97,46 +102,85 @@
         }
 
         .welcome h2 {
+            font-size: 3rem;
             margin-bottom: 20px;
         }
 
-        .welcome-content {
+        /*.welcome-content {
+            font-size: 1.5rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 100%;
-        }
+        }*/
 
         .welcome img {
-            width: 250px;
-            height: 250px;
+            width: 400px;
+            height: 400px;
             border-radius: 50%;
             object-fit: cover;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 60px 0px 0px 60px;
         }
 
         .welcome .welcome-text {
             max-width: 500px;
             text-align: left;
             margin-right: 20px;
+            margin-left: 80px;
+            font-size: 1.3rem;
+        }
+
+        .welcome .welcome-text p {
+            color: rgb(210, 205, 205);
         }
 
         .about-me {
             background-color: rgb(31, 30, 30);
             width: 100%;
             height: 100%;
-            text-align: left;
             margin: 0;
             padding: 40px 70px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .about-me h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            margin-left: 80px;
+        }
+
+        .about-me .about-me-text {
+            max-width: 1000px;
+            text-align: left;
+            font-size: 1.3rem;
+            margin-left: 80px;
+            color: rgb(210, 205, 205);
         }
 
         .professional-skills {
             background-color: rgb(17, 17, 17);
             width: 100%;
             height: 100%;
-            text-align: left;
             margin: 0;
             padding: 40px 70px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .professional-skills h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            margin-left: 80px;
+        }
+
+        .professional-skills .professional-skills-text {
+            max-width: 1000px;
+            text-align: left;
+            font-size: 1.3rem;
+            margin-left: 80px;
+            color: rgb(210, 205, 205);
         }
         
         .footer {
@@ -147,6 +191,10 @@
             box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
             margin-top: auto;
             width: 100%;
+            margin-left: 0px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
 
         .footer a {
@@ -163,7 +211,6 @@
 <body>
     <div class="toolbar">
         <button onclick="window.location.href=`home.html`">Home</button>
-        <button onclick="window.location.href=`about.html`">About Me</button>
         <button onclick="window.location.href=`projects.html`">Projects</button>
         <button onclick="window.location.href=`academia.html`">Academia</button>
         <button onclick="window.location.href=`personalachievements.html`">Personal Achievements</button>
@@ -175,7 +222,7 @@
     <div class="main-body">
         <div class="banner">
             <h1>Luke Millar</h1>
-            <h3>Welcome to my personal resume website, thanks for stopping by!</h3>
+            <p>Welcome to my personal resume website, thanks for stopping by!</p>
         </div>
         <div class="welcome">
             <div class="welcome-text">
@@ -189,17 +236,21 @@
         </div>
         <div class="about-me">
             <h2>About Me</h2>
-            <p>Welcome and thank you for taking the time to visit my personal resume website.</p>
-            <p>Here you will find all of the relevant information about myself that you may find interesting.</p>
-            <p>Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects.</p>
-            <p>P.S If your a fellow golfer you will find my app 'Dialed In' very interesting!</p>
+            <div class="about-me-text">
+            <p>I was born in Northern Ireland and raised in the seaside town of Portstewart were I spent seven years a primary school. I attended Colaraine Grammar School from 2013 to 2020 were suring my early years at Coleraine Grammar School I developed a passion for Golf. I became a member of Porstewart Golf Club in 2013 and have since played 
+                there most of my life. My A-Level in Digital Technology sparked a huge interest for me in the technological industry and therefore I continued my education at Queen's University in Belfast were I studied a Bachelors Degree in Computer Science. During my third year at queens I spent a year in industry at Advanded Micro Devices (AMD). In the summer of 2023 I lived in new jersey were I caddied at Ridgewood Golf Club for two months.
+            </p>
+            </div>
+            
         </div>
         <div class="professional-skills">
             <h2>Professional Skills</h2>
+            <div class="professional-skills-text">
             <p>Welcome and thank you for taking the time to visit my personal resume website.</p>
             <p>Here you will find all of the relevant information about myself that you may find interesting.</p>
             <p>Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects.</p>
             <p>P.S If your a fellow golfer you will find my app 'Dialed In' very interesting!</p>
+            </div>
         </div>
     </div>
     <div class="footer">

@@ -1,173 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Contact Me</title>
-    <style>
-        body {
-            background-image: url('images/code.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            font-family: 'PT Sans', sans-serif;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<title>Contact Me</title>
+<style>
+    body {
+        background-image: url('images/contact.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
 
-        .toolbar {
-            background-color: rgb(0, 0, 0);
-            padding: 30px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
+    .toolbar {
+        background-color: rgb(0, 0, 0);
+        padding: 30px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
 
-        .toolbar button {
-            background: none;
-            border: none;
-            color: white;
-            cursor: pointer;
-            font-size: 16px;
-            margin-right: 15px;
-            padding: 10px;
-            transition: color 0.3s ease;
-        }
+    .toolbar button {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        margin-right: 15px;
+        padding: 10px;
+        transition: color 0.3s ease;
+    }
 
-        .toolbar button:hover {
-            color: #ff9800;
-        }
+    .toolbar button:hover {
+        color: #ff9800;
+    }
 
-        .toolbar .download-cv {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px 20px;
-            background-color: #ff9800;
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            margin-left: 10px;
-            transition: background-color 0.3s ease;
-        }
+    .toolbar .download-cv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        background-color: #ff9800;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        margin-left: 10px;
+        transition: background-color 0.3s ease;
+    }
 
-        .main-body {
-            padding-top: 100px;
-            font-family: "PT Sans", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            max-width: 100%;
-            margin: 0 auto;
-        }
+    .main-body {
+        padding-top: 100px;
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        max-width: 100%;
+        margin: 0 auto;
+    }
 
-        .banner {
-            height: 50vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+    .banner {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 
-        .banner h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
+    .banner h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
 
-        .contact {
-            background-color: rgb(0, 0, 0);
-            width: 100%;
-            margin: 0;
-            padding: 40px 70px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    .banner h2 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
 
-        .contact h2 {
-            margin-bottom: 20px;
-        }
+    .contact {
+        background-color: rgb(26, 25, 25);
+        width: 100%;
+        margin: 0;
+        padding: 40px 70px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
 
-        .contact .contact-content {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            max-width: 800px;
-        }
+    .contact h2 {
+        margin-bottom: 20px;
+    }
 
-        .contact .contact-text {
-            max-width: 50%;
-            text-align: left;
-            margin-right: 20px;
-        }
+    .contact .contact-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 800px;
+    }
 
-        .socials {
-            max-width: 50%;
-            text-align: left;
-        }
+    .contact .contact-text {
+        max-width: 50%;
+        text-align: left;
+        margin-right: 20px;
+    }
 
-        .footer {
-            background-color: rgb(0, 0, 0);
-            color: white;
-            text-align: center;
-            padding: 20px;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-            width: 100%;
-        }
+    .socials {
+        background-color: rgb(0, 0, 0);
+        max-width: 50%;
+        text-align: right;
+        padding: 10%;
+    }
 
-        .footer a {
-            text-decoration: none;
-            margin: 0 10px;
-            color: #ff9800;
-        }
+    .socials p {
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
 
-        .footer a:hover {
-            text-decoration: underline;
-        }
+    .socials p i {
+        margin-right: 10px;
+    }
 
-        .email-form {
-            width: 100%;
-            max-width: 500px;
-            margin-top: 20px;
-        }
+    .footer {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: auto;
+        width: 100%;
+    }
 
-        .email-form input,
-        .email-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
+    .footer a {
+        text-decoration: none;
+        margin: 0 10px;
+    }
 
-        .email-form button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #ff9800;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+    .footer a:hover {
+        text-decoration: underline;
+    }
 
-        .email-form button:hover {
-            background-color: #e68a00;
-        }
-    </style>
+    .email-form {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 20px;
+    }
+
+    .email-form input, .email-form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .email-form button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .email-form button:hover {
+        background-color: #ff9800;
+    }
+</style>
 </head>
-
 <body>
     <div class="toolbar">
         <button onclick="window.location.href='home.html'">Home</button>
@@ -185,32 +199,32 @@
             <h1>Contact Me</h1>
         </div>
         <div class="contact">
-            <h2>Contact Me</h2>
+            <h1>Contact Me</h1>
             <div class="contact-content">
                 <div class="contact-text">
                     <p>In this page you can find multiple ways to get in contact or connect with me via email or social media.</p>
                     <div class="email-form">
                         <form action="send_mail.php" method="post">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="text" name="email" placeholder="Email" required>
+                            <input type="text" name="number" placeholder="Phone Number" required>
                             <textarea name="message" placeholder="Message" rows="5" required></textarea>
                             <button type="submit">Send Message</button>
                         </form>
                     </div>
                 </div>
                 <div class="socials">
-                    <p>Phone: +447719138985</p>
-                    <p>Email: lmillar23@qub.ac.uk</p>
-                    <p><a href="https://www.linkedin.com/in/lukemillar" target="_blank">LinkedIn</a></p>
-                    <p><a href="https://github.com/GrizzMillar" target="_blank">GitHub</a></p>
+                    <p><i class="fas fa-phone"></i> +447719138985</p>
+                    <p><i class="fas fa-envelope"></i> lmillar23@qub.ac.uk</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lukemillar" target="_blank">LinkedIn</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/username" target="_blank">GitHub</a></p>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <p>Phone: <a href="tel:+447719138985">+447719138985</a> | Email: <a href="mailto:lmillar23@qub.ac.uk">lmillar23@qub.ac.uk</a> | LinkedIn: <a href="https://www.linkedin.com/in/lukemillar" target="_blank">linkedin.com/in/lukemillar</a></p>
+        <p>Phone: <a href="tel:+447719138985"><i class="fas fa-phone"></i> +447719138985</a> | Email: <a href="mailto:lmillar23@qub.ac.uk"><i class="fas fa-envelope"></i> lmillar23@qub.ac.uk</a> | LinkedIn: <a href="https://www.linkedin.com/in/lukemillar" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/lukemillar</a> | GitHub: <a href="https://github.com/username" target="_blank"><i class="fab fa-github"></i> github.com/username</a></p>
         <p>&copy; 2024 Luke Millar</p>
     </div>
 </body>
-
 </html>
