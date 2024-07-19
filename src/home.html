@@ -138,7 +138,7 @@
         .about-me {
             background-color: rgb(31, 30, 30);
             width: 100%;
-            height: 100%;
+            height: 160%;
             margin: 0;
             padding: 40px 70px;
             display: flex;
@@ -206,6 +206,63 @@
             text-decoration: underline;
         }
 
+.flip-card {
+  background-color: transparent;
+  width: 240px;
+  height: 154px;
+  perspective: 1000px;
+  color: white;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.flip-card img {
+    width: 240px;
+    height: 154px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background-color: #171717;
+}
+
+.flip-card-back {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background-color: #171717;
+  transform: rotateY(180deg);
+}
+
+.programming-cards {
+    display: flex;
+    align-items: center
+}
+
     </style>
 </head>
 <body>
@@ -227,18 +284,25 @@
         <div class="welcome">
             <div class="welcome-text">
             <h2>Welcome</h2>
-            <p>Welcome and thank you for taking the time to visit my personal resume website.</p>
-            <p>Here you will find all of the relevant information about myself that you may find interesting.</p>
-            <p>Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects.</p>
-            <p>P.S If your a fellow golfer you will find my app 'Dialed In' very interesting!</p>
+            <p>Welcome and thank you for taking the time to visit my personal resume website. I have completed my degree
+            in computer science and now I am an aspiring software developer. Here you will find all of the relevant information about myself that you may find interesting.
+            Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects.
+            P.S If your a fellow golfer you will find my app 'Dialed In' very interesting!</p>
+            
             </div>
             <img src="images/home_image.jpg" alt="luke">
         </div>
         <div class="about-me">
             <h2>About Me</h2>
             <div class="about-me-text">
-            <p>I was born in Northern Ireland and raised in the seaside town of Portstewart were I spent seven years a primary school. I attended Colaraine Grammar School from 2013 to 2020 were suring my early years at Coleraine Grammar School I developed a passion for Golf. I became a member of Porstewart Golf Club in 2013 and have since played 
-                there most of my life. My A-Level in Digital Technology sparked a huge interest for me in the technological industry and therefore I continued my education at Queen's University in Belfast were I studied a Bachelors Degree in Computer Science. During my third year at queens I spent a year in industry at Advanded Micro Devices (AMD). In the summer of 2023 I lived in new jersey were I caddied at Ridgewood Golf Club for two months.
+            <p>I was born in Northern Ireland and raised in the seaside town of Portstewart. I attended Colaraine Grammar School from 2013 to 2020 were I completed my A-Levels in Digital Technology, Religious Studies and History.
+                My A-Level in Digital Technology sparked a huge interest for me in the technological industry and therefore I continued my education at Queen's University in Belfast were I studied a Bachelors Degree in Computer Science. My interest in Technology was sparked whenever I moved to Belfast to study computer science at Queen’s University in 2020. Almost immediately I became addicted to implementing my own coding projects and was inspired to achieve a role as a software developer upon completion of my degree. During my third year at queens I spent a year in industry at Advanced Micro Devices (AMD) were I worked on the development of the Alveo Data Centre Acceleration Cards.
+            </p>
+            <p>
+                During my younger years I developed a passion for Golf. I became a member of Porstewart Golf Club in 2013 and have since played there for my entire amateur career. My playing handicap is 3 and I have won many competions at Portstewart. Furthermore, I have played in Golf Ireland provincial and national tournaments and even represented Northern Ireland in the 2018 British Schools Championship at Celtic Manor in Wales. Golf has also provided me with a job for the last 10 years were I have worked as a golf caddy during the summer months. In the summer of 2023 I lived in new jersey were I caddied at Ridgewood Golf Club for two months.
+            </p>
+            <p>
+                I have a strong passion for using my skills in software development to implement my own applications. Please visit the projects page to find out more.
             </p>
             </div>
             
@@ -247,10 +311,99 @@
             <h2>Professional Skills</h2>
             <div class="professional-skills-text">
             <p>Welcome and thank you for taking the time to visit my personal resume website.</p>
-            <p>Here you will find all of the relevant information about myself that you may find interesting.</p>
-            <p>Please take the time to check out my GitHub profile and have a look at some of my completed/ongoing projects.</p>
-            <p>P.S If your a fellow golfer you will find my app 'Dialed In' very interesting!</p>
             </div>
+            <div class="programming-cards">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/python.jpeg" alt="luke">
+                    </div>
+                    <div class="flip-card-back">
+                        
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                           
+                        </div>
+                        <div class="flip-card-back">
+                            
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                               
+                            </div>
+                            <div class="flip-card-back">
+                                
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                   
+                                </div>
+                                <div class="flip-card-back">
+                                    
+                                      
+                                    </div>
+                                </div>
+                            </div>
+            </div>
+            <div class="programming-cards">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                           
+                        </div>
+                        <div class="flip-card-back">
+                            
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                               
+                            </div>
+                            <div class="flip-card-back">
+                                
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                   
+                                </div>
+                                <div class="flip-card-back">
+                                    
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                       
+                                    </div>
+                                    <div class="flip-card-back">
+                                        
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
         </div>
     </div>
     <div class="footer">
